@@ -1,14 +1,345 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="javafxapplication.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><Label alignment="TOP_CENTER" layoutY="6.0" prefHeight="66.0" prefWidth="947.0" text="mini SIG">
+<font>
+<Font name="System Bold" size="29.0" />
+</font>
+<textFill>
+<LinearGradient endX="1.0" endY="1.0">
+<stops>
+<Stop color="BLACK" />
+<Stop color="WHITE" offset="1.0" />
+</stops>
+</LinearGradient>
+</textFill></Label><TabPane layoutY="59.0" prefHeight="675.0" prefWidth="947.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml">
+  <tabs>
+<Tab text="Consultation" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<ScrollPane layoutX="19.0" layoutY="7.0" prefHeight="438.0" prefWidth="585.0" />
+<Separator layoutX="604.0" layoutY="20.0" orientation="VERTICAL" prefHeight="592.0" prefWidth="11.0" />
+<Separator layoutX="627.0" layoutY="294.0" prefHeight="6.0" prefWidth="295.0" />
+<TabPane layoutX="622.0" layoutY="38.0" prefHeight="222.0" prefWidth="311.0" tabClosingPolicy="UNAVAILABLE">
+<tabs>
+<Tab text="Lieux">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<TableView layoutX="19.0" layoutY="23.0" prefHeight="113.0" prefWidth="275.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Lieux" />
+</columns>
+</TableView>
+<TextField layoutX="29.0" layoutY="148.0" prefHeight="25.0" prefWidth="265.0" promptText="Recherche ..." />
+</children>
 </AnchorPane>
+</content>
+</Tab>
+<Tab text="Parcours">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<TableView layoutX="19.0" layoutY="23.0" prefHeight="122.0" prefWidth="275.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Parcours" />
+</columns>
+</TableView>
+<TextField layoutX="23.0" layoutY="169.0" prefHeight="25.0" prefWidth="265.0" promptText="Recherche ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+</tabs>
+</TabPane>
+<TableView layoutX="19.0" layoutY="484.0" prefHeight="108.0" prefWidth="566.0">
+<columns>
+<TableColumn prefWidth="75.0" text="NEWS" />
+</columns>
+</TableView><Label alignment="CENTER" layoutX="621.0" layoutY="8.0" prefHeight="29.0" prefWidth="312.0" text="Consultation" textAlignment="CENTER">
+<font>
+<Font name="System Bold" size="20.0" />
+</font></Label><Separator layoutX="16.0" layoutY="455.0" prefHeight="4.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Pane layoutX="636.0" layoutY="316.0" prefHeight="165.0" prefWidth="289.0">
+<children><TitledPane animated="false" layoutY="-6.0" prefHeight="261.0" prefWidth="291.0" text="POI" xmlns:fx="http://javafx.com/fxml">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="289.0">
+<children><Button layoutY="209.0" mnemonicParsing="false" text="Précédent" /><Button layoutX="232.0" layoutY="209.0" mnemonicParsing="false" text="Suivant" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><TableView layoutY="-1.0" prefHeight="196.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<columns>
+<TableColumn prefWidth="75.0" text="Historique" />
+</columns>
+</TableView>
+</children></AnchorPane>
+  </content>
+</TitledPane>
+</children></Pane>
+</children>
+</AnchorPane>
+</content>
+</Tab>
+    <Tab text="Edition">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><ScrollPane layoutX="19.0" layoutY="7.0" prefHeight="438.0" prefWidth="585.0" /><Separator layoutX="604.0" layoutY="20.0" orientation="VERTICAL" prefHeight="572.0" prefWidth="11.0" /><Separator layoutX="14.0" layoutY="458.0" prefHeight="3.0" prefWidth="586.0" /><TabPane layoutX="622.0" layoutY="36.0" prefHeight="574.0" prefWidth="311.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml">
+  <tabs>
+<Tab text="Lieux" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<TabPane layoutX="-4.0" layoutY="-3.0" prefHeight="548.0" prefWidth="315.0" tabClosingPolicy="UNAVAILABLE">
+<tabs>
+<Tab text="Ajouter">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="315.0">
+<children>
+<Button layoutX="231.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TextField layoutX="132.74609375" layoutY="73.5" />
+<TextField layoutX="133.0" layoutY="120.0" />
+<TextField layoutX="133.0" layoutY="215.0" />
+<TextField layoutX="133.0" layoutY="169.0" />
+<TextField layoutX="133.0" layoutY="260.0" />
+<TextField layoutX="133.0" layoutY="315.0" />
+<Label layoutX="32.0" layoutY="72.0" prefHeight="29.0" prefWidth="81.0" text="Nom  :" />
+<Label layoutX="32.0" layoutY="118.0" prefHeight="29.0" prefWidth="81.0" text="Image  :" />
+<Label layoutX="32.0" layoutY="167.0" prefHeight="29.0" prefWidth="81.0" text="Thématique  :" />
+<Label layoutX="32.0" layoutY="220.0" prefHeight="29.0" prefWidth="81.0" text="Descriptif  :" />
+<Label layoutX="32.0" layoutY="258.0" prefHeight="29.0" prefWidth="81.0" text="Hypertexte  :" />
+<Label layoutX="10.0" layoutY="313.0" prefHeight="29.0" prefWidth="103.0" text="Autre(s) image(s)  :" />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Modifier">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="315.0">
+<children>
+<ChoiceBox layoutX="152.0" layoutY="189.0" prefWidth="150.0" />
+<Label layoutX="21.0" layoutY="187.0" prefHeight="29.0" prefWidth="81.0" text="Selection  :" />
+<Button layoutX="241.0" layoutY="480.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TextField layoutX="152.0" layoutY="237.0" />
+<TextField layoutX="152.0" layoutY="287.0" />
+<TextField layoutX="152.0" layoutY="371.0" />
+<TextField layoutX="152.0" layoutY="331.0" />
+<TextField layoutX="152.0" layoutY="409.0" />
+<TextField layoutX="152.0" layoutY="447.0" />
+<Label layoutX="21.0" layoutY="245.0" prefHeight="29.0" prefWidth="81.0" text="Nom  :" />
+<Label layoutX="21.0" layoutY="285.0" prefHeight="29.0" prefWidth="81.0" text="Image  :" />
+<Label layoutX="21.0" layoutY="329.0" prefHeight="29.0" prefWidth="81.0" text="Thématique  :" />
+<Label layoutX="32.0" layoutY="369.0" prefHeight="29.0" prefWidth="81.0" text="Descriptif  :" />
+<Label layoutX="32.0" layoutY="407.0" prefHeight="29.0" prefWidth="81.0" text="Hypertexte  :" />
+<Label layoutX="21.0" layoutY="445.0" prefHeight="29.0" prefWidth="103.0" text="Autre(s) image(s)  :" />
+<TableView layoutX="15.0" layoutY="27.0" prefHeight="108.0" prefWidth="290.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Nom" />
+</columns>
+</TableView>
+<TextField layoutX="16.0" layoutY="146.0" prefHeight="25.0" prefWidth="286.0" promptText="Recherche ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Supprimer">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<ChoiceBox layoutX="132.0" layoutY="33.5" prefWidth="150.0" />
+<Label layoutX="32.0" layoutY="32.0" prefHeight="29.0" prefWidth="81.0" text="Selection  :" />
+<Button layoutX="222.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TableView layoutX="18.0" layoutY="166.0" prefHeight="200.0" prefWidth="279.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Nom" />
+</columns>
+</TableView>
+<TextField layoutX="18.0" layoutY="381.0" prefHeight="25.0" prefWidth="278.0" promptText="Nom ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+</tabs>
+</TabPane>
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Parcours" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<TabPane layoutX="-4.0" layoutY="-3.0" prefHeight="548.0" prefWidth="315.0" tabClosingPolicy="UNAVAILABLE">
+<tabs>
+<Tab text="Ajouter">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="315.0">
+<children>
+<Button layoutX="231.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TextField layoutX="132.74609375" layoutY="73.5" />
+<TextField layoutX="133.0" layoutY="120.0" />
+<TextField layoutX="133.0" layoutY="215.0" />
+<TextField layoutX="133.0" layoutY="169.0" />
+<TextField layoutX="133.0" layoutY="260.0" />
+<TextField layoutX="133.0" layoutY="315.0" />
+<Label layoutX="32.0" layoutY="72.0" prefHeight="29.0" prefWidth="81.0" text="Nom  :" />
+<Label layoutX="32.0" layoutY="118.0" prefHeight="29.0" prefWidth="81.0" text="Image  :" />
+<Label layoutX="32.0" layoutY="167.0" prefHeight="29.0" prefWidth="81.0" text="Thématique  :" />
+<Label layoutX="32.0" layoutY="220.0" prefHeight="29.0" prefWidth="81.0" text="Descriptif  :" />
+<Label layoutX="32.0" layoutY="258.0" prefHeight="29.0" prefWidth="81.0" text="Hypertexte  :" />
+<Label layoutX="10.0" layoutY="313.0" prefHeight="29.0" prefWidth="103.0" text="Autre(s) image(s)  :" />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Modifier">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="315.0">
+<children>
+<ChoiceBox layoutX="152.0" layoutY="189.0" prefWidth="150.0" />
+<Label layoutX="21.0" layoutY="187.0" prefHeight="29.0" prefWidth="81.0" text="Selection  :" />
+<Button layoutX="241.0" layoutY="480.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TextField layoutX="152.0" layoutY="237.0" />
+<TextField layoutX="152.0" layoutY="287.0" />
+<TextField layoutX="152.0" layoutY="371.0" />
+<TextField layoutX="152.0" layoutY="331.0" />
+<TextField layoutX="152.0" layoutY="409.0" />
+<TextField layoutX="152.0" layoutY="447.0" />
+<Label layoutX="21.0" layoutY="245.0" prefHeight="29.0" prefWidth="81.0" text="Nom  :" />
+<Label layoutX="21.0" layoutY="285.0" prefHeight="29.0" prefWidth="81.0" text="Image  :" />
+<Label layoutX="21.0" layoutY="329.0" prefHeight="29.0" prefWidth="81.0" text="Thématique  :" />
+<Label layoutX="32.0" layoutY="369.0" prefHeight="29.0" prefWidth="81.0" text="Descriptif  :" />
+<Label layoutX="32.0" layoutY="407.0" prefHeight="29.0" prefWidth="81.0" text="Hypertexte  :" />
+<Label layoutX="21.0" layoutY="445.0" prefHeight="29.0" prefWidth="103.0" text="Autre(s) image(s)  :" />
+<TableView layoutX="15.0" layoutY="27.0" prefHeight="108.0" prefWidth="290.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Nom" />
+</columns>
+</TableView>
+<TextField layoutX="16.0" layoutY="146.0" prefHeight="25.0" prefWidth="286.0" promptText="Recherche ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Supprimer">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<ChoiceBox layoutX="132.0" layoutY="33.5" prefWidth="150.0" />
+<Label layoutX="32.0" layoutY="32.0" prefHeight="29.0" prefWidth="81.0" text="Selection  :" />
+<Button layoutX="222.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TableView layoutX="18.0" layoutY="166.0" prefHeight="200.0" prefWidth="279.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Nom" />
+</columns>
+</TableView>
+<TextField layoutX="18.0" layoutY="381.0" prefHeight="25.0" prefWidth="278.0" promptText="Nom ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+</tabs>
+</TabPane>
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="News" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<TabPane layoutX="-4.0" layoutY="-3.0" prefHeight="548.0" prefWidth="315.0" tabClosingPolicy="UNAVAILABLE">
+<tabs>
+<Tab text="Ajouter">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="315.0">
+<children>
+<Button layoutX="231.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TextField layoutX="132.74609375" layoutY="73.5" />
+<TextField layoutX="133.0" layoutY="120.0" />
+<TextField layoutX="133.0" layoutY="215.0" />
+<TextField layoutX="133.0" layoutY="169.0" />
+<TextField layoutX="133.0" layoutY="260.0" />
+<TextField layoutX="133.0" layoutY="315.0" />
+<Label layoutX="32.0" layoutY="72.0" prefHeight="29.0" prefWidth="81.0" text="Nom  :" />
+<Label layoutX="32.0" layoutY="118.0" prefHeight="29.0" prefWidth="81.0" text="Image  :" />
+<Label layoutX="32.0" layoutY="167.0" prefHeight="29.0" prefWidth="81.0" text="Thématique  :" />
+<Label layoutX="32.0" layoutY="220.0" prefHeight="29.0" prefWidth="81.0" text="Descriptif  :" />
+<Label layoutX="32.0" layoutY="258.0" prefHeight="29.0" prefWidth="81.0" text="Hypertexte  :" />
+<Label layoutX="10.0" layoutY="313.0" prefHeight="29.0" prefWidth="103.0" text="Autre(s) image(s)  :" />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Modifier">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="315.0">
+<children>
+<ChoiceBox layoutX="152.0" layoutY="189.0" prefWidth="150.0" />
+<Label layoutX="21.0" layoutY="187.0" prefHeight="29.0" prefWidth="81.0" text="Selection  :" />
+<Button layoutX="241.0" layoutY="480.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TextField layoutX="152.0" layoutY="237.0" />
+<TextField layoutX="152.0" layoutY="287.0" />
+<TextField layoutX="152.0" layoutY="371.0" />
+<TextField layoutX="152.0" layoutY="331.0" />
+<TextField layoutX="152.0" layoutY="409.0" />
+<TextField layoutX="152.0" layoutY="447.0" />
+<Label layoutX="21.0" layoutY="245.0" prefHeight="29.0" prefWidth="81.0" text="Nom  :" />
+<Label layoutX="21.0" layoutY="285.0" prefHeight="29.0" prefWidth="81.0" text="Image  :" />
+<Label layoutX="21.0" layoutY="329.0" prefHeight="29.0" prefWidth="81.0" text="Thématique  :" />
+<Label layoutX="32.0" layoutY="369.0" prefHeight="29.0" prefWidth="81.0" text="Descriptif  :" />
+<Label layoutX="32.0" layoutY="407.0" prefHeight="29.0" prefWidth="81.0" text="Hypertexte  :" />
+<Label layoutX="21.0" layoutY="445.0" prefHeight="29.0" prefWidth="103.0" text="Autre(s) image(s)  :" />
+<TableView layoutX="15.0" layoutY="27.0" prefHeight="108.0" prefWidth="290.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Nom" />
+</columns>
+</TableView>
+<TextField layoutX="16.0" layoutY="146.0" prefHeight="25.0" prefWidth="286.0" promptText="Recherche ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Supprimer">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<ChoiceBox layoutX="132.0" layoutY="33.5" prefWidth="150.0" />
+<Label layoutX="32.0" layoutY="32.0" prefHeight="29.0" prefWidth="81.0" text="Selection  :" />
+<Button layoutX="222.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="OK" />
+<TableView layoutX="18.0" layoutY="166.0" prefHeight="200.0" prefWidth="279.0">
+<columns>
+<TableColumn prefWidth="75.0" text="Nom" />
+</columns>
+</TableView>
+<TextField layoutX="18.0" layoutY="381.0" prefHeight="25.0" prefWidth="278.0" promptText="Nom ..." />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+</tabs>
+</TabPane>
+</children>
+</AnchorPane>
+</content>
+</Tab>
+  </tabs>
+</TabPane><TableView layoutX="18.0" layoutY="484.0" prefHeight="108.0" prefWidth="565.0" xmlns:fx="http://javafx.com/fxml">
+  <columns>
+    <TableColumn prefWidth="75.0" text="NEWS" />
+  </columns>
+</TableView><Label alignment="CENTER" layoutX="623.0" layoutY="12.0" prefHeight="17.0" prefWidth="310.0" text="Edition">
+<font>
+<Font name="System Bold" size="20.0" />
+</font></Label>
+</children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane><Label alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="28.0" prefHeight="29.0" prefWidth="162.0" text="MENU">
+<font>
+<Font size="17.0" />
+</font></Label>
+</children></Pane>
