@@ -11,8 +11,5 @@ package javafxapplication;
  * @author Dinodzo
  */
 public class DATA {
-
-    static void Connection() {
-        
-    }
+    
 }
