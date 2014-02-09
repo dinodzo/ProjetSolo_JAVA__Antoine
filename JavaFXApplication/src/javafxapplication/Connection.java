@@ -5,6 +5,7 @@
  */
 
 package javafxapplication;
+
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -17,21 +18,21 @@ import java.sql.Statement;
 
 public class Connection {
     public static void main(String[] args) {
-    String url = "jdbc:mysql://localhost/test";
-    String user = "root";
-    String password = "azerty";
-   
-    String q = "SELECT * from tabletest";
-   
-    try {
-        java.sql.Connection con = DriverManager.getConnection( url, user, password);
-    Statement stmt = con.createStatement();
-   
-    stmt.executeQuery(q);
-   
-    } catch (SQLException ex) {
-        System.out.println("Echec connection!!" );
-    }
-   
+//    String url = "jdbc:mysql://localhost/test";
+//    String user = "root";
+//    String password = "azerty";
+//   
+//    String Req = "SELECT * from tabletest";
+//
+//    try 
+//        {
+//            java.sql.Connection con = DriverManager.getConnection( url, user, password);
+//            Statement stmt = con.createStatement();
+//            stmt.executeQuery(Req);
+//        } 
+//    catch (SQLException ex) 
+//        {
+//         System.out.println("Echec connection!!" );
+//        }
     }
 }
