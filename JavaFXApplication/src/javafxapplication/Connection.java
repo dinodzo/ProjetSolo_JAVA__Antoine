@@ -5,26 +5,30 @@
  */
 
 package javafxapplication;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 
 /**
  *
  * @author Dinodzo
  */
 public class Connection {
-        public static void Connection(String[] args) {
-        try {
-          Class.forName("com.mysql.jdbc.Driver");
-          System.out.println("Driver O.K.");
-
-          String url = "jdbc:mysql://localhost:3306/bdd_sdzee";
-          String user = "root";
-          String passwd = "azerty";
-
-          Connection conn = DriverManager.getConnection(url, user, passwd);
-          System.out.println("Connexion effective !");         
-
-        } catch (Exception e) {
-          e.printStackTrace();
-        }      
+    private static Connection conn;
+    public static void main(String[] args) {  
+    try {
+        conn =
+        (Connection) DriverManager.getConnection("jdbc:mysql://localhost/test?" +
+                                   "user=monty&password=greatsqldb");
+        // Do something with the Connection
+        } 
+    
+    catch (SQLException ex) {
+            // handle any errors
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
     }
 }
