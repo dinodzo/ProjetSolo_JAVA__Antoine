@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1124.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1124.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication.FXMLDocumentController">
   <children>
     <Label alignment="TOP_CENTER" layoutY="6.0" prefHeight="66.0" prefWidth="947.0" text="mini SIG">
       <font>
@@ -88,7 +88,7 @@
                       <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="289.0">
                           <children>
-                            <Button layoutY="209.0" mnemonicParsing="false" text="Précédent" />
+                            <Button fx:id="Bouton1" layoutY="209.0" mnemonicParsing="false" onAction="#actionPerformed" text="Précédent" />
                             <Button layoutX="232.0" layoutY="209.0" mnemonicParsing="false" text="Suivant" />
                             <TableView layoutY="-1.0" prefHeight="196.0" prefWidth="289.0">
                               <columns>
