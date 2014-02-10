@@ -29,13 +29,12 @@ public class JavaFXApplication extends Application {
         System.out.println("TEST LOADING");      
        
         
-        // AFFICHAGE TEST
-        DATA Affichage = new DATA();
-        Affichage.AffichageTEST();
+//        // AFFICHAGE TEST
+//        DATA Affichage = new DATA();
+//        Affichage.AffichageTEST();
         
-////        AJOUT TEST
-//        DATA Ajout = new DATA();
-//        Ajout.AjoutTEST();
+        
+
     }
 
    

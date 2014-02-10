@@ -29,59 +29,7 @@ import javafx.scene.control.TextField;
  */
 public class FXMLDocumentController implements Initializable {
     
-    @FXML
-    private Label label;
-    
-    @FXML
-    public void ClickTEST(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
-//    @FXML
-//    private Label LiAjLabel;
-//    
-//    @FXML
-//    private TextField LiAjNom;
-//    
-//    @FXML
-//    private TextField LiAjImage;
-//    
-//    @FXML
-//    private TextField LiAjThem;
-//    
-//    @FXML
-//    private TextField LiAjDesc;
-//    
-//    @FXML
-//    private TextField LiAjHT;
-//    
-//    @FXML
-//    private TextField LiAjAI;
-//    
-//    @FXML
-//    private TextField LiModNom;
-//    
-//    @FXML
-//    private TextField LiModImage;
-//    
-//    @FXML
-//    private TextField LiModThem;
-//    
-//    @FXML
-//    private TextField LiModDesc;
-//    
-//    @FXML
-//    private TextField LiModHT;
-//    
-//    @FXML
-//    private TextField LiModAI;
-//    
-//    @FXML
-//    private ComboBox LiModCB;
-//    
-//    @FXML
-//    private ComboBox LiSupCB;
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
