@@ -11,5 +11,5 @@ package javafxapplication;
  * @author Dinodzo
  */
 public class DATA {
-    
+
 }
