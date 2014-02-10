@@ -27,10 +27,12 @@ public class ConnectMysql {
             connect = DriverManager.getConnection("jdbc:mysql://localhost/test?" + "user=SQLdino&password=azerty");
             statement = connect.createStatement();
             resultset = statement.executeQuery("SELECT * FROM tabletest");
-            System.out.println("TEST");
 
             while (resultset.next()){
-                System.out.println("ID TEST: " + resultset.getInt("ID" + "TXT TEST: " + resultset.getString("TXT")));
+                
+			System.out.println("---------------------------");
+			System.out.println("ID: "+resultset.getInt("ID"));
+			System.out.println("TXT: "+resultset.getString("TXT"));
             }
         } 
         

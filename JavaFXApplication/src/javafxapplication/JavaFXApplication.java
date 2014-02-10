@@ -27,17 +27,15 @@ public class JavaFXApplication extends Application {
         stage.show();
         
         System.out.println("TEST LOADING");      
+       
         
-        // CONNECTION BDD
-        ConnectMysql Connection = new ConnectMysql();
-        try
-            {
-                Connection.mainConnection();
-            }
-        catch (Exception e)
-            {
-                System.out.println(e);
-            }
+        // AFFICHAGE TEST
+        DATA Affichage = new DATA();
+        Affichage.AffichageTEST();
+        
+////        AJOUT TEST
+//        DATA Ajout = new DATA();
+//        Ajout.AjoutTEST();
     }
 
    

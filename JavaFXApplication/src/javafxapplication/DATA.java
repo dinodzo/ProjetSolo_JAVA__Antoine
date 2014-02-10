@@ -6,10 +6,69 @@
 
 package javafxapplication;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+//import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  *
  * @author Dinodzo
  */
 public class DATA {
+    
+    public Connection connect = null;
+    public Statement statement = null;
+    public ResultSet resultset = null;
+    
+    public void AffichageTEST()throws Exception 
+    {
+        try 
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            connect = DriverManager.getConnection("jdbc:mysql://localhost/test?" + "user=SQLdino&password=azerty");
+            statement = connect.createStatement();
+            resultset = statement.executeQuery("SELECT * FROM tabletest");
 
+            while (resultset.next())
+            {
+			System.out.println("---------------------------");
+			System.out.println("ID: "+resultset.getInt("ID"));
+			System.out.println("TXT: "+resultset.getString("TXT"));
+            }
+        } 
+        
+        catch (SQLException ex) 
+        {
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        } 
+    }
+    public void AjoutTEST()throws Exception {
+
+    try 
+    {
+        Class.forName("com.mysql.jdbc.Driver");
+        connect = DriverManager.getConnection("jdbc:mysql://localhost/test?" + "user=SQLdino&password=azerty");
+        statement = connect.createStatement();
+        resultset = statement.executeQuery("SELECT * FROM tabletest");
+
+        while (resultset.next())
+        {
+                    System.out.println("---------------------------");
+                    System.out.println("ID: "+resultset.getInt("ID"));
+                    System.out.println("TXT: "+resultset.getString("TXT"));
+        }
+    } 
+
+    catch (SQLException ex) 
+    {
+        System.out.println("SQLException: " + ex.getMessage());
+        System.out.println("SQLState: " + ex.getSQLState());
+        System.out.println("VendorError: " + ex.getErrorCode());
+    } 
+}
 }
