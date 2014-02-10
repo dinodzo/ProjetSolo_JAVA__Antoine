@@ -26,21 +26,23 @@ public class JavaFXApplication extends Application {
         stage.setScene(scene);
         stage.show();
         
-        System.out.print("TEST LOADING");       
-    }
-
-   
-    public static void main(String[] args) {    
+        System.out.println("TEST LOADING");      
         
-        ConnectMysql connection = new ConnectMysql();
+        // CONNECTION BDD
+        ConnectMysql Connection = new ConnectMysql();
         try
             {
-                connection.mainConnection();
+                Connection.mainConnection();
             }
         catch (Exception e)
             {
                 System.out.println(e);
             }
+    }
+
+   
+    public static void main(String[] args) {    
+        
         launch(args);
     }
     
