@@ -30,8 +30,8 @@ public class JavaFXApplication extends Application {
        
         
 //        // AFFICHAGE TEST
-//        DATA Affichage = new DATA();
-//        Affichage.AffichageTEST();
+        DATA Affichage = new DATA();
+        Affichage.AffichageTEST();
         
         
 
